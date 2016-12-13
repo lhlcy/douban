@@ -11,7 +11,6 @@
         //当前页面的条数
             $scope.pagesize=5;
         //根据路由获取当前的页数
-
             $scope.curpage=$routeParams.page|| 1;
             var movieStart=($scope.curpage-1)*$scope.pagesize;
 
