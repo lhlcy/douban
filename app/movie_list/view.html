@@ -2,8 +2,8 @@
 <div class="list">
     <ul>
         <li ng-repeat="item in movie.subjects">
-            <a href="#/details">
-                <img ng-src="{{item.images.large}}" alt="">
+            <a href="#/details/{{item.id}}">
+            <img ng-src="{{item.images.large}}" alt="">
             </a>
             <div class="meta">
                 <h4><span>{{item.title}}</span> <em>{{item.rating.average}}</em></h4>
@@ -19,3 +19,10 @@
     </div>
 </div>
 <!--电影列表结束-->
+<!--遮罩层-->
+<div class="loading-mask" ng-show="isLoaded"></div>
+<!--动画-->
+<div class="spinner">
+    <div class="dot1"></div>
+    <div class="dot2"></div>
+</div>
